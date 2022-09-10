@@ -43,10 +43,6 @@ To check remote url
 
 To setup CI/CD pipeline in heroku we need 3 information
 
-HEROKU_EMAIL = snehalbalpande1@gmail.com
-HEROKU_API_KEY = 2bee9681-63c3-472a-b214-280b8e8b7606
-HEROKU_APP_NAME = meachine-learning-app
-
 BUILD DOCKER IMAGE
 
 '''docker build -t <image_name>:<tagname> .'''
@@ -59,7 +55,7 @@ To list docker image
 
 Run docker image
 
-'''docker run -p 5000:5000 -e PORT=5000 f8c749e73678'''
+'''docker run -p 5000:5000 -e PORT=5000 '''
 
 To check running container in docker
 
@@ -71,12 +67,9 @@ Tos stop docker conatiner
 
 '''python setup.py install'''
 
-Install ipykernel
+Install ipykernel 
 
 '''pip install ipykernel'''
 
 Data Drift :
 When your dataset stats gets change we call it as data drift
-
-
-# Write a function to get training file path from artifact dir
